@@ -12,7 +12,7 @@ export default class SignInForm extends SignForm
             <form id="sign-in-form">
                 <AutoComplete
                   hintText="you@example.com"
-                  floatingLabelText="Email"
+                  floatingLabelText="text"
                   fullWidth={true}
                   dataSource={this.state.emailDataSource}
                   errorText={this.state.errors.email}

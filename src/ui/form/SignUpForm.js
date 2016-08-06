@@ -12,8 +12,7 @@ export default class SignUpForm extends SignForm
         return (
             <form id="sign-up-form">
                 <AutoComplete
-                  ref="email"
-                  type="email"
+                  type="text"
                   hintText="you@example.com"
                   floatingLabelText="Email"
                   fullWidth={true}
@@ -23,7 +22,6 @@ export default class SignUpForm extends SignForm
                   onBlur={(e => this.validateEmail(e.target.value)).bind(this)}
                 />
                 <TextField
-                  ref="mobilePhone"
                   type="phone"
                   hintText="+86"
                   floatingLabelText="Mobile phone"
@@ -32,7 +30,6 @@ export default class SignUpForm extends SignForm
                   onBlur={(e => this.validateMobilePhone(e.target.value)).bind(this)}
                 />
                 <TextField
-                  ref="password"
                   type="password"
                   hintText="At least 6 characters"
                   floatingLabelText="Password"
