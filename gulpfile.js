@@ -42,3 +42,20 @@ gulp.task("dev", [ "clean" ], cb => {
         gutil.log("[webpack-dev-server]", uri);
     });
 });
+
+gulp.task("run", [ "clean" ], cb => {
+    const config = require("./webpack.config.js");
+    config.plugins.push(
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        })
+    );
+    const compiler = webpack(config);
+    new WebpackDevServer(compiler, {
+        publicPath: config.output.publicPath
+    }).listen(8080, "0.0.0.0", err => {
+        if (err) throw new gutil.PluginError("webpack-dev-server", err);
+        const uri = "http://localhost:8080/";
+        gutil.log("[webpack-dev-server]", uri);
+    });
+});

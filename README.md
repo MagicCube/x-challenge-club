@@ -24,7 +24,13 @@ by default. Please see the compiled result in the `./assets`.
 
 
 
-## Debug
+## Run in production mode
+```sh
+$ gulp run
+```
+
+
+## Run in development mode
 ```sh
 $ gulp dev
 ```
