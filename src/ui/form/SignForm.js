@@ -38,13 +38,13 @@ export default class SignForm extends Form
     {
         if (this.validateRequires("password", value))
         {
-            if ((/^[a-zA-Z]\w{5,14}$/i).test(value))
+            if ((/^\w{6,15}$/i).test(value))
             {
                 this.clearError("password");
             }
             else
             {
-                this.showError("password", "At least 6 letters or numbers, begins with letter.");
+                this.showError("password", "Password should be 6-15 characters including letters and numbers.");
             }
         }
     }
