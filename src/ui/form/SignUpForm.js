@@ -4,6 +4,7 @@ import { AutoComplete, RaisedButton, Checkbox, Snackbar, TextField  } from "mate
 import { blue500 } from "material-ui/styles/colors";
 
 import SignForm from "./SignForm";
+import validate from "../../validate";
 
 export default class SignUpForm extends SignForm
 {
@@ -13,6 +14,7 @@ export default class SignUpForm extends SignForm
             <form id="sign-up-form">
                 <AutoComplete
                   type="text"
+                  animated={false}
                   hintText="you@example.com"
                   floatingLabelText="Email"
                   fullWidth={true}
@@ -20,6 +22,7 @@ export default class SignUpForm extends SignForm
                   errorText={this.state.errors.email}
                   onUpdateInput={this._email_onUpdateInput.bind(this)}
                   onBlur={(e => this.validateEmail(e.target.value)).bind(this)}
+                  onNewRequest={(value => this.validateEmail(value)).bind(this)}
                 />
                 <TextField
                   type="phone"
@@ -46,21 +49,5 @@ export default class SignUpForm extends SignForm
                 <RaisedButton label="AGREE AND Sign up" primary={true} fullWidth={true} style={{ marginTop: 25, height: 50 }}/>
             </form>
         );
-    }
-
-
-    validateMobilePhone(value)
-    {
-        if (this.validateRequires("mobilePhone", value))
-        {
-            if ((/^\+[1-9]{1}[0-9]{3,14}$/i).test(value))
-            {
-                this.clearError("mobilePhone");
-            }
-            else
-            {
-                this.showError("mobilePhone", "This seems not a valid phone number.");
-            }
-        }
     }
 }

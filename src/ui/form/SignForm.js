@@ -1,4 +1,5 @@
 import Form from "./Form";
+import validate from "../../validate";
 
 export default class SignForm extends Form
 {
@@ -9,44 +10,20 @@ export default class SignForm extends Form
     }
 
 
-    validateRequires(field, value)
-    {
-        if (value.trim() === "")
-        {
-            this.showError(field, "This field is required.");
-            return false;
-        }
-        return true;
-    }
 
     validateEmail(value)
     {
-        if (this.validateRequires("email", value))
-        {
-            if ((/^[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[A-Za-z0-9!#$%&'*+/=?^_`{|}~-]+)*@([A-Za-z0-9]+(?:-[A-Za-z0-9]+)?\.)+[A-Za-z0-9]+(?:-[A-Za-z0-9]+)?$/i).test(value))
-            {
-                this.clearError("email");
-            }
-            else
-            {
-                this.showError("email", "This seems not a valid email address.");
-            }
-        }
+        this.validateField("email", validate(value).required().email());
+    }
+
+    validateMobilePhone(value)
+    {
+        this.validateField("mobilePhone", validate(value).required().phoneNumber());
     }
 
     validatePassword(value)
     {
-        if (this.validateRequires("password", value))
-        {
-            if ((/^\w{6,15}$/i).test(value))
-            {
-                this.clearError("password");
-            }
-            else
-            {
-                this.showError("password", "Password should be 6-15 characters including letters and numbers.");
-            }
-        }
+        this.validateField("password", validate(value).required().password());
     }
 
 

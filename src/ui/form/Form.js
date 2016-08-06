@@ -1,5 +1,7 @@
 import React from "react";
 
+import Validator from "../../validate/Validator";
+
 export default class Form extends React.Component
 {
     constructor(props)
@@ -10,14 +12,10 @@ export default class Form extends React.Component
         };
     }
 
-
-
-
-
     showError(field, error)
     {
         const state = {
-            errors: {}
+            errors: this.state.errors
         };
         state.errors[field] = error;
         this.setState(state);
@@ -25,21 +23,11 @@ export default class Form extends React.Component
 
     clearError(field)
     {
-        const state = {
-            errors: {}
-        };
-        state.errors[field] = null;
-        this.setState(state);
+        this.showError(field, null);
     }
 
-
-    validateRequires(field, value)
+    validateField(field, validator)
     {
-        if (value.trim() === "")
-        {
-            this.showError(field, "This field is required.");
-            return false;
-        }
-        return true;
+        this.showError(field, validator.errorMessage);
     }
 }
