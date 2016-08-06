@@ -10,12 +10,13 @@ export default class SignInForm extends SignForm
             <form id="sign-in-form">
                 <AutoComplete
                   hintText="you@example.com"
-                  floatingLabelText="text"
+                  floatingLabelText="Email"
                   fullWidth={true}
                   dataSource={this.state.emailDataSource}
                   errorText={this.state.errors.email}
                   onUpdateInput={this._email_onUpdateInput.bind(this)}
                   onBlur={(e => this.validateEmail(e.target.value)).bind(this)}
+                  onNewRequest={(value => this.validateEmail(value)).bind(this)}
                 />
                 <TextField
                   hintText="Password"
