@@ -8,6 +8,12 @@ import validate from "../../validate";
 
 export default class SignUpForm extends SignForm
 {
+    constructor(props)
+    {
+        super(props);
+        this.state.agree = true;
+    }
+
     render()
     {
         return (
@@ -41,12 +47,14 @@ export default class SignUpForm extends SignForm
                   onBlur={(e => this.validatePassword(e.target.value)).bind(this)}
                 />
                 <Checkbox
-                  label="I agree to the Terms of Service and Privacy Policy"
+                  ref="agree"
+                  label="I agree to the Terms of Service and Privacy Policy."
                   defaultChecked={true}
                   style={{ marginTop: 25 }}
                   labelStyle={{ color: "silver", fontSize: 12 }}
+                  onCheck={((e, checked) => this.setState({ agree: checked })).bind(this)}
                 />
-                <RaisedButton label="AGREE AND Sign up" primary={true} fullWidth={true} style={{ marginTop: 25, height: 50 }}/>
+                <RaisedButton label="AGREE AND Sign up" disabled={!this.state.agree} primary={true} fullWidth={true} style={{ marginTop: 25, height: 50 }}/>
             </form>
         );
     }
