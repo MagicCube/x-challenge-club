@@ -22,6 +22,7 @@ by default. Please see the compiled result in the `./assets`.
 
 `gulp clean` is supported.
 
+> You need to install [Gulp](http://gulpjs.com/) before building.
 
 
 ## Run in production mode
@@ -37,6 +38,12 @@ $ gulp dev
  Open [http://localhost:8080/](http://localhost:8080/).
 
 
+ ## Automation test
+ ```sh
+ $ npm test
+ ```
+> You need to install [Mocha](https://mochajs.org/) before testing.
+
 
 ## Techniques in Brief
 * ES6 / ES7
@@ -46,5 +53,7 @@ $ gulp dev
 * LESS
 * Node.js
 * Material UI
+* Mocha.js
+* Should.js
 * React
 * Webpack

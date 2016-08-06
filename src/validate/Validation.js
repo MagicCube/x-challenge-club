@@ -83,7 +83,7 @@ export default class Validation
 
     typeOf(type, errorMessage = `This field must be a ${type}`)
     {
-        return this.check(typeof(this.value) !== type, errorMessage);
+        return this.check(typeof(this.value) === type, errorMessage);
     }
     string(errorMessage)
     {
