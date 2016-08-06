@@ -1,6 +1,4 @@
-import React from "react";
-
-import { AutoComplete, RaisedButton, Checkbox, Snackbar, TextField  } from "material-ui";
+import { AutoComplete, RaisedButton, Checkbox, TextField } from "material-ui";
 import { blue500 } from "material-ui/styles/colors";
 
 import SignForm from "./SignForm";

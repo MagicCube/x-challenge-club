@@ -1,5 +1,3 @@
-import React from "react";
-
 import { AutoComplete, RaisedButton, TextField  } from "material-ui";
 
 import SignForm from "./SignForm";

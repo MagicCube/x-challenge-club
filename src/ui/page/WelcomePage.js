@@ -1,4 +1,3 @@
-import React from "react";
 import { Tab, Tabs } from "material-ui";
 
 import SignInForm from "../form/SignInForm";

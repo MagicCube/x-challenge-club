@@ -1,9 +1,11 @@
 const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const webpack = require("webpack");
 
 module.exports = {
     context: path.resolve("./src"),
     entry: {
+        vendor: [ "react", "material-ui" ],
         app: [ "./app.jsx", "./res/index.less" ]
     },
     output: {
@@ -28,6 +30,14 @@ module.exports = {
         ]
     },
     plugins: [
+        new webpack.ProvidePlugin({
+            "React": "react"
+        }),
+        new webpack.optimize.CommonsChunkPlugin({
+            name: "vendor",
+            filename: "vendor.js",
+            minChunks: Infinity
+        }),
         new ExtractTextPlugin("./res/[name].css")
     ]
 };
