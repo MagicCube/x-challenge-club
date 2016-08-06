@@ -7,11 +7,16 @@
 $ npm install
 ```
 
+You need to install `Node.js v6` before building.
 
 
-## Build
-This project use `Gulp` and `Webpack` as the builder and module manager, while
-`Babel` as ES6 compiler and `LESS` as the CSS pre-processor.
+
+## Building
+> This project use `Gulp` and `Webpack` as the builder and module manager, while
+>
+> `Babel` as ES6 compiler and `LESS` as the CSS pre-processor.
+>
+> ***You need to install [Gulp](http://gulpjs.com/) before building.***
 
 To simplify the building process, just get started by using
 ```sh
@@ -20,29 +25,34 @@ $ gulp
 All the client JavaScript codes and resources will be minified and uglified
 by default. Please see the compiled result in the `./assets`.
 
-`gulp clean` is supported.
-
-> You need to install [Gulp](http://gulpjs.com/) before building.
+`gulp dist` and `gulp clean` are also supported.
 
 
-## Run in production mode
+
+## Running
+
+**in PRODUCTION Mode**
+
 ```sh
 $ gulp run
 ```
 
+**in DEVELOPMENT Mode**
 
-## Run in development mode
 ```sh
 $ gulp dev
 ```
- Open [http://localhost:8080/](http://localhost:8080/).
+ Open [http://localhost:8080/](http://localhost:8080/) in your mobile browser.
 
 
- ## Automation test
- ```sh
+
+ ## Testing
+> ***You need to install [Mocha](https://mochajs.org/) before testing.***
+```sh
  $ npm test
- ```
-> You need to install [Mocha](https://mochajs.org/) before testing.
+```
+
+
 
 
 ## Techniques in Brief
