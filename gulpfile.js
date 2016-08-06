@@ -15,7 +15,13 @@ gulp.task("clean", cb => {
 
 
 gulp.task("dist", [ "clean" ], cb => {
-    webpack(require("./webpack.config-dist.js"), (err, stats) => {
+    const config = require("./webpack.config.js");
+    config.plugins.push(
+        new webpack.optimize.UglifyJsPlugin({
+            minimize: true
+        })
+    );
+    webpack(config, (err, stats) => {
         if (err) throw new gutil.PluginError("webpack", err);
         gutil.log("[webpack]", stats.toString());
     });
