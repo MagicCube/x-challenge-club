@@ -29,3 +29,16 @@ by default. Please see the compiled result in the `./assets`.
 $ gulp dev
 ```
  Open [http://localhost:8080/](http://localhost:8080/).
+
+
+
+## Techniques in Brief
+* ES6 / ES7
+* Babel
+* Gulp
+* HTML5
+* LESS
+* Node.js
+* Material UI
+* React
+* Webpack
