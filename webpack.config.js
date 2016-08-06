@@ -14,7 +14,6 @@ module.exports = {
     devServer: {
         contentBase: path.resolve("./")
     },
-    devtool: "cheap-module-source-map",
     module: {
         loaders: [
              {

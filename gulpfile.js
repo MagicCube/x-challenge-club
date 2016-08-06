@@ -24,7 +24,9 @@ gulp.task("dist", [ "clean" ], cb => {
 
 gulp.task("dev", [ "clean" ], cb => {
     const config = require("./webpack.config.js");
-    const compiler = webpack(config);
+    const compiler = webpack(Object.assign({
+        devtool: "cheap-module-source-map"
+    }, config));
 
     new WebpackDevServer(compiler, {
         publicPath: config.output.publicPath
