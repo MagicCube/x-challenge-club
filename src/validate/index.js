@@ -1,6 +1,6 @@
-import Validator from "./Validator";
+import Validation from "./Validation";
 
 export default function(value)
 {
-    return new Validator(value);
+    return new Validation(value);
 }

@@ -1,7 +1,5 @@
 import React from "react";
 
-import Validator from "../../validate/Validator";
-
 export default class Form extends React.Component
 {
     constructor(props)
@@ -26,8 +24,8 @@ export default class Form extends React.Component
         this.showError(field, null);
     }
 
-    validateField(field, validator)
+    validateField(field, validation)
     {
-        this.showError(field, validator.errorMessage);
+        this.showError(field, validation.errorMessage);
     }
 }
