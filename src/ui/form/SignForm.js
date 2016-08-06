@@ -1,39 +1,11 @@
-import React from "react";
+import Form from "./Form";
 
-export default class SignForm extends React.Component
+export default class SignForm extends Form
 {
     constructor(props)
     {
         super(props);
-        this.state = {
-            emailDataSource: [],
-            errors: {
-                email: null,
-                password: null
-            }
-        };
-    }
-
-
-
-
-
-    showError(field, error)
-    {
-        const state = {
-            errors: {}
-        };
-        state.errors[field] = error;
-        this.setState(state);
-    }
-
-    clearError(field)
-    {
-        const state = {
-            errors: {}
-        };
-        state.errors[field] = null;
-        this.setState(state);
+        this.state.emailDataSource = [];
     }
 
 
@@ -58,21 +30,6 @@ export default class SignForm extends React.Component
             else
             {
                 this.showError("email", "This seems not a valid email address.");
-            }
-        }
-    }
-
-    validateMobilePhone(value)
-    {
-        if (this._validateRequires("mobilePhone", value))
-        {
-            if ((/^\+[1-9]{1}[0-9]{3,14}$/i).test(value))
-            {
-                this.clearError("mobilePhone");
-            }
-            else
-            {
-                this.showError("mobilePhone", "This seems not a valid phone number.");
             }
         }
     }

@@ -50,4 +50,20 @@ export default class SignUpForm extends SignForm
             </form>
         );
     }
+
+
+    validateMobilePhone(value)
+    {
+        if (this.validateRequires("mobilePhone", value))
+        {
+            if ((/^\+[1-9]{1}[0-9]{3,14}$/i).test(value))
+            {
+                this.clearError("mobilePhone");
+            }
+            else
+            {
+                this.showError("mobilePhone", "This seems not a valid phone number.");
+            }
+        }
+    }
 }
