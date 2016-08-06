@@ -6,7 +6,7 @@ import getMuiTheme from "material-ui/styles/getMuiTheme";
 import { AppBar, AutoComplete, RaisedButton, Checkbox, Tab, Tabs, TextField  } from "material-ui";
 import { deepOrange400, deepOrange500, deepOrange700 } from 'material-ui/styles/colors';
 
-import WelcomePage from "./ui/page/WelcomePage";
+import WelcomePage from "./page/WelcomePage";
 
 class App extends React.Component
 {

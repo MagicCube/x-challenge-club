@@ -2,7 +2,6 @@ import { AutoComplete, RaisedButton, Checkbox, TextField } from "material-ui";
 import { blue500 } from "material-ui/styles/colors";
 
 import SignForm from "./SignForm";
-import validate from "../../validate";
 
 export default class SignUpForm extends SignForm
 {

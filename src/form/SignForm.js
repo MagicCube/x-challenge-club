@@ -1,5 +1,5 @@
 import Form from "./Form";
-import validate from "../../validate";
+import validate from "../validate";
 
 export default class SignForm extends Form
 {
