@@ -2,7 +2,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ReactDOM from "react-dom";
 
-import { Router, Route, Link, hashHistory } from 'react-router'
+import { hashHistory, Route, Router } from 'react-router'
 
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import { AppBar, AutoComplete, RaisedButton, Checkbox, Tab, Tabs, TextField  } from "material-ui";
