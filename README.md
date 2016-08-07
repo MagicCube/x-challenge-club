@@ -1,5 +1,4 @@
-# X-Challenge Club
-![Travis CI](https://api.travis-ci.org/MagicCube/x-challenge-club.svg)
+# X-Challenge Club [![](https://api.travis-ci.org/MagicCube/x-challenge-club.svg)](https://travis-ci.org/MagicCube/x-challenge-club)
 
 
 ## Installation
@@ -65,8 +64,9 @@ $ gulp dev
 * Material UI
 * Mock.js
 * Mocha.js
-* Should.js
 * React(react, react-router)
+* Should.js
+* Travis
 * Webpack
 
 
