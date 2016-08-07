@@ -7,16 +7,24 @@ import Page from "./Page";
 
 export default class HomePage extends Page
 {
+    componentDidMount()
+    {
+        document.title = "Welcome";
+    }
+
     render()
     {
-        const headlineChallenges = data.challenges(3);
-        const mostPopularChallenges = data.challenges(9);
+        if (!this.headlineChallenges)
+        {
+            this.headlineChallenges = data.challenges(3);
+            this.mostPopularChallenges = data.challenges(6);
+        }
 
         return (
             <div className="home-page">
                 <section className="headline">
                     <Carousel swipeOptions={{ continuous: true, auto: 3000 }}>
-                        {headlineChallenges.map(challenge =>
+                        {this.headlineChallenges.map(challenge =>
                             <div key={challenge.id + "-container"} style={{ float: "left" }}>
                                 <ChallengeCard key={challenge.id} challenge={challenge}/>
                             </div>
@@ -24,7 +32,7 @@ export default class HomePage extends Page
                     </Carousel>
                 </section>
                 <section className="most-polular">
-                    <ChallengeGrid challenges={mostPopularChallenges}/>
+                    <ChallengeGrid challenges={this.mostPopularChallenges}/>
                 </section>
             </div>
         );

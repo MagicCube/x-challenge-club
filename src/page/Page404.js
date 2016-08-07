@@ -5,6 +5,11 @@ import Page from "./Page";
 
 export default class Page404 extends Page
 {
+    componentDidMount()
+    {
+        document.title = "Not Found";
+    }
+    
     render()
     {
         return (

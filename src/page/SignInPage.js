@@ -7,6 +7,11 @@ import Page from "./Page";
 
 export default class SignInPage extends Page
 {
+    componentDidMount()
+    {
+        document.title = "Sign In";
+    }
+
     render()
     {
         return (
