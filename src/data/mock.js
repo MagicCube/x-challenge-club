@@ -13,7 +13,7 @@ export default {
                 ()  => `/data/images/IMG_${PIC_INDEX++}.JPG`
             ],
             description: Random.paragraph(3, 5),
-            departureDate: () => new Date(new Date("2016-8-10").getTime() + ~~(Math.random() * 30) * 24 * 60 * 60 * 1000).toDateString(),
+            departureDate: () => new Date(new Date(2016, 7, 10).getTime() + ~~(Math.random() * 30) * 24 * 60 * 60 * 1000).toDateString(),
             price: Random.pick([ 99, 199, 299, 499, 1500, 2000, 2499, 8000, 10000, 14999 ]),
             joinedCount: Random.natural(3, 30),
             expectedCount: Random.pick([ 30, 50, 60, 100 ])
