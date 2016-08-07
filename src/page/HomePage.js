@@ -12,16 +12,18 @@ export default class HomePage extends Page
 
         return (
             <div className="home-page">
-                <header>
+                <section className="headlines">
                     <Carousel swipeOptions={{ continuous: true, auto: 3000 }}>
                         {challenges.map(challenge => (
-                            <div style={{ float: "left" }}>
+                            <div key={challenge.id + "-container"} style={{ float: "left" }}>
                                 <ChallengeCard key={challenge.id} challenge={challenge}/>
                             </div>
                         ))}
                     </Carousel>
-                </header>
-                <h1>abc</h1>
+                </section>
+                <section className="most-polular">
+
+                </section>
             </div>
         );
     }
