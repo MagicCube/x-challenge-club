@@ -45,12 +45,17 @@ $ gulp dev
 
 
 
- ## Testing
+## Testing
 > ***You need to install [Mocha](https://mochajs.org/) before testing.***
 ```sh
  $ npm test
 ```
 
+
+
+## Continuous Integration
+* Issues on [Github](https://github.com/MagicCube/x-challenge-club/issues)
+* Trace this project on [Travis](https://travis-ci.org/MagicCube/x-challenge-club)
 
 
 
