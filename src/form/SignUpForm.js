@@ -29,7 +29,8 @@ export default class SignUpForm extends SignForm
                 />
                 <TextField
                   type="phone"
-                  hintText="+86"
+                  hintText="+852"
+                  value="+852"
                   floatingLabelText="Mobile phone"
                   fullWidth={true}
                   errorText={this.state.errors.mobilePhone}
