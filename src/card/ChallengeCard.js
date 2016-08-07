@@ -7,7 +7,7 @@ export default class ChallengeCard extends React.Component
         return (
             <Card>
                 <CardMedia
-                    overlay={<CardTitle title={this.props.challenge.title} subtitle={this.props.challenge.departureDate} />}
+                    overlay={<CardTitle title={this.props.challenge.title} subtitle={this.props.challenge.departureDate.substr(0, 10)} />}
                 >
                     <img src={this.props.challenge.pictures[0]} />
                 </CardMedia>
