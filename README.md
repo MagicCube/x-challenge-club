@@ -65,7 +65,7 @@ $ gulp dev
 * Material UI
 * Mocha.js
 * Should.js
-* React
+* React(react, react-router)
 * Webpack
 
 

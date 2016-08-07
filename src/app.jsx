@@ -2,11 +2,16 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import ReactDOM from "react-dom";
 
+import { Router, Route, Link, hashHistory } from 'react-router'
+
 import getMuiTheme from "material-ui/styles/getMuiTheme";
 import { AppBar, AutoComplete, RaisedButton, Checkbox, Tab, Tabs, TextField  } from "material-ui";
 import { deepOrange400, deepOrange500, deepOrange700 } from 'material-ui/styles/colors';
 
-import WelcomePage from "./page/WelcomePage";
+import HomePage from "./page/HomePage";
+import Page404 from "./page/Page404";
+import SignInPage from "./page/SignInPage";
+
 
 class App extends React.Component
 {
@@ -27,7 +32,11 @@ class App extends React.Component
         return (<MuiThemeProvider muiTheme={this.getTheme()}>
             <div>
                 <AppBar title="X-CHALLENGE"/>
-                <WelcomePage/>
+                <Router history={hashHistory}>
+                    <Route path="/" component={HomePage} />
+                    <Route path="/sign-in" component={SignInPage} />
+                    <Route path="*" component={Page404} />
+                </Router>
             </div>
         </MuiThemeProvider>)
     }
