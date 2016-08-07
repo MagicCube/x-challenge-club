@@ -73,3 +73,9 @@ $ gulp dev
 ## Screenshots
 ### Sign Up
 ![Sign in](https://cloud.githubusercontent.com/assets/1003147/17457855/ff23b972-5c35-11e6-9aee-80e5d9389760.png)
+
+### Home
+![image](https://cloud.githubusercontent.com/assets/1003147/17463127/444d3516-5cf2-11e6-8a2b-495c847022ee.png)
+
+### Menus
+![image](https://cloud.githubusercontent.com/assets/1003147/17463125/2f97567e-5cf2-11e6-884b-82377ea46450.png)
