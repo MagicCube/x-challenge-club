@@ -1,5 +1,5 @@
 # X-Challenge Club
-
+![Travis CI](https://api.travis-ci.org/MagicCube/x-challenge-club.svg)
 
 
 ## Installation
