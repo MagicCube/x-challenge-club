@@ -10,14 +10,14 @@ export default class ChallengeGrid extends React.Component
             <GridList
                 cols={2}
                 cellHeight={200}
-                padding={2}
+                padding={1}
             >
                 {this.props.challenges.map((challenge, i) =>
                     <GridTile
                         key={challenge.id}
                         title={challenge.title}
                         subtitle={challenge.departureDate.substr(0, 10)}
-                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
+                        actionIcon={i % 3 === 2 ? <IconButton><StarBorder color="white" /></IconButton> : null}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
