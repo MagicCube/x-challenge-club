@@ -5,7 +5,7 @@ const webpack = require("webpack");
 module.exports = {
     context: path.resolve("./src"),
     entry: {
-        vendor: [ "react", "material-ui" ],
+        vendor: [ "react", "react-dom", "react-router", "react-tap-event-plugin", "material-ui", "mockjs", "nuka-carousel" ],
         app: [ "./app.jsx", "./res/index.less" ]
     },
     output: {

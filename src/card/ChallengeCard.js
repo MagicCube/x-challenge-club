@@ -1,15 +1,15 @@
-import { Card, CardActions, CardText, CardTitle, FlatButton } from "material-ui";
+import { Card, CardActions, CardMedia, CardText, CardTitle, FlatButton } from "material-ui";
 
-export default class ChallengeCard
+export default class ChallengeCard extends React.Component
 {
     render()
     {
         return (
             <Card>
                 <CardMedia
-                    overlay={<CardTitle title="Overlay title" subtitle="Overlay subtitle" />}
+                    overlay={<CardTitle title={this.props.challenge.title} subtitle={this.props.challenge.departureDate} />}
                 >
-                    <img src="images/nature-600-337.jpg" />
+                    <img src={this.props.challenge.pictures[0]} />
                 </CardMedia>
             </Card>
         );
