@@ -80,7 +80,7 @@ $ gulp dev
 ![Sign in](https://cloud.githubusercontent.com/assets/1003147/17457855/ff23b972-5c35-11e6-9aee-80e5d9389760.png)
 
 ### Home
-![image](https://cloud.githubusercontent.com/assets/1003147/17463127/444d3516-5cf2-11e6-8a2b-495c847022ee.png)
+![image](https://cloud.githubusercontent.com/assets/1003147/17463589/91b2ffc6-5cfb-11e6-8c8c-6c334dcdb47a.png)
 
 ### Drawer Menu
 ![image](https://cloud.githubusercontent.com/assets/1003147/17463160/dca91208-5cf2-11e6-8e5f-cd24e1b172c1.png)
