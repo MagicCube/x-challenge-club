@@ -60,7 +60,7 @@ export default class MainDrawer extends React.Component
                         <ListItem primaryText="Discover" style={{ color: deepOrange50 }} leftIcon={<DiscoverIcon color={deepOrange50} />} />
                         <ListItem primaryText="Search" style={{ color: deepOrange50 }} leftIcon={<SearchIcon color={deepOrange50} />} />
                     </List>
-                    <Divider inset={true} />
+                    <Divider/>
                     <List>
                         <Subheader style={{ color: deepOrange100 }}>My challenges</Subheader>
                         <ListItem primaryText="Joined challenges" style={{ color: deepOrange50 }} rightIcon={<div className="number badge">5</div>} />
