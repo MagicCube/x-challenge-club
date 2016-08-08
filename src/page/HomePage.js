@@ -27,7 +27,7 @@ export default class HomePage extends Page
         return (
             <div className="home-page">
                 <section className="headline">
-                    <Carousel swipeOptions={{ continuous: true, auto: 3000 }}>
+                    <Carousel swipeOptions={{ continuous: true, auto: 5000 }}>
                         {this.headlineChallenges.map(challenge =>
                             <div key={challenge.id + "-container"} style={{ float: "left" }}>
                                 <ChallengeCard key={challenge.id} challenge={challenge}/>
