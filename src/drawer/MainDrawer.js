@@ -33,7 +33,7 @@ export default class MainDrawer extends React.Component
             >
                 <header style={{ color: deepOrange100, backgroundColor: deepOrange900, height: 150, paddingLeft: 25, paddingTop: 60 }}>
                     <Avatar
-                        src="/images/user.jpg"
+                        src="images/user.jpg"
                         size={80}
                     />
                     <div style={{height:48, lineHeight:"48px"}}>
