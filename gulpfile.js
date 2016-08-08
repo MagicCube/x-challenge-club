@@ -17,6 +17,11 @@ gulp.task("clean", cb => {
 gulp.task("dist", [ "clean" ], cb => {
     const config = require("./webpack.config.js");
     config.plugins.push(
+        new webpack.DefinePlugin({
+            "process.env": {
+                NODE_ENV: JSON.stringify("production")
+            }
+        }),
         new webpack.optimize.UglifyJsPlugin({
             minimize: true
         })

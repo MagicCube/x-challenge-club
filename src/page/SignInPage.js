@@ -12,7 +12,7 @@ export default class SignInPage extends Page
         document.title = "Sign In";
     }
 
-    render()
+    renderBody()
     {
         return (
             <div className="sign-in-page">

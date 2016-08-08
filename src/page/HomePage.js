@@ -12,7 +12,7 @@ export default class HomePage extends Page
         document.title = "Welcome";
     }
 
-    render()
+    renderBody()
     {
         if (!this.headlineChallenges)
         {
