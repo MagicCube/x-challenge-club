@@ -10,7 +10,7 @@ export default {
             id: Random.guid(),
             title: Random.title(1, 3),
             "pictures|1-1": [
-                ()  => `/data/images/IMG_${PIC_INDEX++}.JPG`
+                ()  => `data/images/IMG_${PIC_INDEX++}.JPG`
             ],
             description: Random.paragraph(3, 5),
             departureDate: () => new Date(new Date(2016, 7, 10).getTime() + ~~(Math.random() * 30) * 24 * 60 * 60 * 1000).toDateString(),
