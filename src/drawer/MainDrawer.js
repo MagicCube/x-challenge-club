@@ -6,6 +6,8 @@ import HomeIcon from "material-ui/svg-icons/action/home";
 import SearchIcon from "material-ui/svg-icons/action/search";
 import DiscoverIcon from "material-ui/svg-icons/image/remove-red-eye";
 
+import { hashHistory } from 'react-router'
+
 export default class MainDrawer extends React.Component
 {
     constructor(props)
@@ -33,7 +35,7 @@ export default class MainDrawer extends React.Component
             >
                 <header style={{ color: deepOrange100, backgroundColor: deepOrange900, height: 150, paddingLeft: 25, paddingTop: 60 }}>
                     <Avatar
-                        src="/images/user.jpg"
+                        src="images/user.jpg"
                         size={80}
                     />
                     <div style={{height:48, lineHeight:"48px"}}>
@@ -56,7 +58,7 @@ export default class MainDrawer extends React.Component
                 <nav>
                     <List>
                         <Subheader style={{ color: deepOrange100 }}>X-Challenge Club</Subheader>
-                        <ListItem primaryText="Home" style={{ color: deepOrange50 }} leftIcon={<HomeIcon color={deepOrange50} />} />
+                        <ListItem primaryText="Home" onClick={() => { hashHistory.push("/"); this.setState({open:false}); }} style={{ color: deepOrange50 }} leftIcon={<HomeIcon color={deepOrange50} />} />
                         <ListItem primaryText="Discover" style={{ color: deepOrange50 }} leftIcon={<DiscoverIcon color={deepOrange50} />} />
                         <ListItem primaryText="Search" style={{ color: deepOrange50 }} leftIcon={<SearchIcon color={deepOrange50} />} />
                     </List>

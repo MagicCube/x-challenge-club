@@ -9,7 +9,7 @@ export default class ChallengeGrid extends React.Component
         return (
             <GridList
                 cols={2}
-                cellHeight={200}
+                cellHeight={210}
                 padding={1}
             >
                 {this.props.challenges.map((challenge, i) =>
@@ -22,7 +22,7 @@ export default class ChallengeGrid extends React.Component
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
                         cols={i % 3 === 2 ? 2 : 1}
-                        rows={i % 3 === 2 ? 2 : 1}
+                        rows={i % 3 === 2 ? 1 : 1}
                     >
                         <img src={challenge.pictures[0]} />
                     </GridTile>

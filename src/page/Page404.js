@@ -9,8 +9,8 @@ export default class Page404 extends Page
     {
         document.title = "Not Found";
     }
-    
-    render()
+
+    renderBody()
     {
         return (
             <div className="404-page" style={{ padding: 20 }}>
