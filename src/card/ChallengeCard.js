@@ -9,7 +9,7 @@ export default class ChallengeCard extends React.Component
                 <CardMedia
                     overlay={<CardTitle title={this.props.challenge.title} subtitle={this.props.challenge.departureDate.substr(0, 10)} />}
                 >
-                    <img src={this.props.challenge.pictures[0]} style={{ height: 375 }} />
+                    <div style={{ backgroundImage: `url(${this.props.challenge.pictures[0]})`, backgroundPosition: "center", backgroundRepeat: "no-repeat", backgroundSize: "cover", height: 538 }} />
                 </CardMedia>
             </Card>
         );

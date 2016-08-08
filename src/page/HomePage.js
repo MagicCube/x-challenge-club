@@ -17,6 +17,10 @@ export default class HomePage extends Page
         if (!this.headlineChallenges)
         {
             this.headlineChallenges = data.challenges(3);
+            const titles = ["西贡 • 独木舟", "巴厘 • 冲浪", "澳门 • War Game"];
+            this.headlineChallenges.forEach((challenge, i) => {
+                challenge.title = titles[i];
+            });
             this.mostPopularChallenges = data.challenges(6);
         }
 
