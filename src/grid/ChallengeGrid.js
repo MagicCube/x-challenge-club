@@ -8,8 +8,8 @@ export default class ChallengeGrid extends React.Component
     {
         return (
             <GridList
-                cols={2}
-                cellHeight={210}
+                cols={1}
+                cellHeight={230}
                 padding={1}
             >
                 {this.props.challenges.map((challenge, i) =>
@@ -17,12 +17,12 @@ export default class ChallengeGrid extends React.Component
                         key={challenge.id}
                         title={challenge.title}
                         subtitle={challenge.departureDate.substr(0, 10)}
-                        actionIcon={i % 3 === 2 ? <IconButton><StarBorder color="white" /></IconButton> : null}
+                        actionIcon={<IconButton><StarBorder color="white" /></IconButton>}
                         actionPosition="left"
                         titlePosition="top"
                         titleBackground="linear-gradient(to bottom, rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.3) 70%,rgba(0,0,0,0) 100%)"
-                        cols={i % 3 === 2 ? 2 : 1}
-                        rows={i % 3 === 2 ? 1 : 1}
+                        cols={i % 3 === 1 ? 1 : 1}
+                        rows={i % 3 === 1 ? 1 : 1}
                     >
                         <img src={challenge.pictures[0]} />
                     </GridTile>
