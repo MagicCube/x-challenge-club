@@ -81,7 +81,7 @@ export default class Validation
 
 
 
-    typeOf(type, errorMessage = `This field must be a ${type}`)
+    typeOf(type, errorMessage = `This field must be a ${type}.`)
     {
         return this.check(typeof(this.value) === type, errorMessage);
     }
@@ -112,7 +112,7 @@ export default class Validation
             errorMessage);
     }
 
-    phoneNumber(errorMessage = "This seems not a valid phone number")
+    phoneNumber(errorMessage = "This seems not a valid phone number.")
     {
         return this.check(/^\+[1-9]{1}[0-9]{3,14}$/i, errorMessage);
     }
