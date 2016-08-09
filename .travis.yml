@@ -7,4 +7,4 @@ cache:
 
 script:
   - npm test
-  - bash ./scripts/deploy-to-gh-pages.sh
+ 
