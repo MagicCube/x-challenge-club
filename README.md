@@ -59,7 +59,7 @@ $ gulp dev
 
 
 
-## Techniques in Brief
+## Technical Stack
 * ES6 / ES7
 * Babel
 * Gulp
