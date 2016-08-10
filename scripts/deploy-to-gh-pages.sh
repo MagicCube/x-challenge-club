@@ -12,8 +12,8 @@ function make
 }
 
 # config
-#git config --global user.email "henry1943@163.com"
-#git config --global user.name "Travis CI"
+git config --global user.email "henry1943@163.com"
+git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
 make
