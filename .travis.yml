@@ -1,13 +1,7 @@
-# whitelist
-branches:
-  only:
-    - master
-# blacklist
 branches:
   except:
-    - develop
-    - gh-pages
-
+  - develop
+  - gh-pages
 language: node_js
 node_js:
 - 6.1.0
@@ -19,4 +13,4 @@ script:
 - bash ./scripts/deploy-to-gh-pages.sh
 env:
   global:
-  - secure: gm5WklVhoxahHLY7CBZMqPjTigYJq7Q0UWJfu99NQtjCgJEEzNdE3XtPNrDz+z6YcRsQs4h6hHigpNRSn3fROCiFpsZGTSzXJrM0CWM2hGFBZ3CK5Mm1xSe1O56CBmEBbH9XDOtijdA5tqhEZIzDbZ1LqmmJxxEUPxjvH0tX6alLwHI3NLIq/kXo/AjkYX2TsVLSGx4prqEwdY5+dPJm/+59BbysMYPTugDYk8seL5vStHnuVKMP5DCoZPZJVxfNFwTqANv5P/QFHkvsS/kwjca7wjmEcK07/uqYUpEhbkBlnj8ZFuXlQoYvFa63334gG3JK+oN0+Lb8TWn4D6AUEST3YWPpGRAQS1GBQA2H1qW4NqQ1jYk9+dTer7hQkrsLMqzixfjlJWucQOFCyfpbSpm9TPYxEfheTr+JZY6EZssoQ0Y28QJPuKNpWKIZ59ptZNqEacz839zEYnvDVldACwWKmEnXTQpXOrhcoIayDC6fsj9/dZlr+bryQjbM2FUft5Z0gCusLuH0xUX+AjlcR7LjqGd1EFRgLO2mfqeCrRiHctFpJJ7aiXNCyMfQL+tiuHTC8//TgvblLj+zX0uYou3dSVbgYvoO5E4fxLKLJfA8X93enO/eiiABIVYI0c7V4ZAzRS7t5LVuupDO0PHB9AGhauB+SWRW49Gp6gSgle8=
+  - secure: i7igtOlHbrveytww8VfR5B2YmfXX/UUhtvE0vufJ4lgOVl4Xn5PrpJXJ5Om6JvMBrgM41ybcCtvpGpQPxdlaMLq5Q+qBntScuXv/igMnLIGEDQz1G8kGB1EfwE7l+hAiI8G1XrTUM/pRCJOkQoTvqOUPvgGXgFIUcU4ZsQlEJk5FRLjr1ep6RtPumIBx4+6qSZhh1XKFTsVI6CcLH9GcH0YhS4G1Nug7If2HVdhYzBOzqLPvItgj8qTO27FDOlFdXbsaZWJcbUtwmStz5lh7lh1Q9H1AF6nW7LnfvXEEVnSE/JaBDHSuJkOpNaiT+4pJDRoY7ksS1e9i/pxPpu8CMJ6qTzwvO7HNzPV/3dObLNO23W2H4OqNlj9VogsB1/sGChsCUGlZOy2BUpWjBrLPdpl7LFDIOjDcha1X6nvRoS7fsmlEs6PU9mDj36LanAhwaJ/zt2/0bveVxcz/9w/dYJ8dRk6sPl/7vJ08utAijyIC5PYfSk8bfgcPdJ/CaxmLp4Q7Iz9lc8vdUV5xkmE5BytkhXKvAoD+U57sIzkofPft0xG5bb2J5erbtO53Fjp17GtZhfWxS1ehdXFB50iIwlXX0OFgXstKQLc4uBpmwW5f/v5+xQH0SU7sgIVZ8cMNopXd6Sviad+X/p/nRDQ1hopHyiVWFcQBKQ1nCvxIIOE=
