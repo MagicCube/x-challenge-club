@@ -26,5 +26,5 @@ git add .
 git commit -m "Deploy to Github Pages"
 
 echo Pushing to gh-pages...
-git push --force "https://$GH_TOKEN@github.com/magiccube/x-challenge-club.git" master:gh-pages
+git push --force --quiet "https://$GH_TOKEN@github.com/magiccube/x-challenge-club.git" master:gh-pages > /dev/null 2>&1
 echo All assets have been updated to date in gh-pages.
