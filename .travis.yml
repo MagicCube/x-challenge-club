@@ -1,12 +1,15 @@
 branches:
   except:
-    - gh-pages
+  - gh-pages
 language: node_js
 node_js:
-  - "6.1.0"
+- 6.1.0
 cache:
   directories:
   - node_modules
 script:
-  - npm test
-  - bash ./scripts/deploy-to-gh-pages.sh
+- npm test
+- bash ./scripts/deploy-to-gh-pages.sh
+env:
+  global:
+    secure: CsM9ZZljXgQqU7eyrnywjiVYGd8+Hi1yFfYblXsXwS1OTH3wohJe9VtoZN/114t05iTaFz0XY1XI2/rQKLSzzTNep9izPuUyMFyd8Zw3sum86gI/ZLERUUkX6UvZtiu66oxcMqVmN2euiFw5UFK/PVS/s2UQAlE4PQZviByJuRWLBta2alNmV5l2NxpCmHSs3WOJqrted9iIdXJYDzfCKCHYQYzKZvKx++eGLdtPZsbGaaIMxcabSKLCHNFR1VRHs6AyozXAeobByOB+vaJKt1ChmBfvZK+VYgI2HLfyhrSZDclPBZot12g+dzrvDxXkv1j5I3DTJ7zlDu72wTpNbhiJtQO4GSpQm0ZIPdgrf91IElJDB5j1IZWMDsYvAdj/4aivkg4btpjXkHGu7wKbDmYXEn3gZFajbgqXUWUuWKnTCZQyUomHXvqgR5UlTAXl89NdTZIIKSywgd5z8qKUQnxSpSlTFgucj6UIbC6lEXb9FX44KPXNJfU6AhvsLHrSbGGBHo7238I2ee8J/DjxbEPr2wMyRdxqiZpSDwhzwGPv4zgxCeOPW8XnVDfwqbOAmIh0Xu4tLdNrhpZL0fNBfi3gJriTq35B2V1Laaw2WYP9KLpB8h9i8gmZoUU8bjEkO5pubmGS1hkM/nSlaZFLV0t/LQ2Lxhpo9rg+wRP3ZSs=
