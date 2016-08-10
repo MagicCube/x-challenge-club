@@ -11,8 +11,6 @@ function make
     cp -avr images build
 }
 
-set -o errexit
-
 # config
 git config --global user.email "henry1943@163.com"
 git config --global user.name "Travis CI"
