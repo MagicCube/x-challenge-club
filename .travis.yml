@@ -1,6 +1,13 @@
+# whitelist
+branches:
+  only:
+    - master
+# blacklist
 branches:
   except:
-  - gh-pages
+    - develop
+    - gh-pages
+
 language: node_js
 node_js:
 - 6.1.0
