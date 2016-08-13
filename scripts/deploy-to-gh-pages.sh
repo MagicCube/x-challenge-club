@@ -6,6 +6,8 @@ function make
     rm -rf build
     mkdir build
     cp index.html build
+    cp index2.html build
+    cp -r vendor build
     cp -r assets build
     cp -r data build
     cp -r images build
