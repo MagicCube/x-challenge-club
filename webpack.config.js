@@ -6,7 +6,8 @@ module.exports = {
     context: path.resolve("./src"),
     entry: {
         vendor: [ "react", "react-dom", "react-router", "react-tap-event-plugin", "material-ui", "mockjs", "react-swipe" ],
-        app: [ "./app.jsx", "./res/index.less" ]
+        app: [ "./app.jsx", "./res/index.less" ],
+        newdesign: [ "./res/index2.less" ],
     },
     output: {
         path: path.resolve("./assets"),
