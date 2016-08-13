@@ -16,6 +16,7 @@ gulp.task("clean", cb => {
 
 gulp.task("dist", [ "clean" ], cb => {
     const config = require("./webpack.config.js");
+    config.output.publicPath = "/x-challenge-club/assets/";
     config.plugins.push(
         new webpack.DefinePlugin({
             "process.env": {
