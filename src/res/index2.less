@@ -25,7 +25,6 @@ body
         height: 64px;
         position: absolute;
         top: 0;
-        background: url(../../images/header.png);
     }
 
     section
@@ -60,20 +59,41 @@ body
 
         &.headline-02
         {
-            height: 50%;
+            height: 100%;
+        }
+
+        &.headline-03
+        {
+            height: 100%;
         }
     }
 
     section.section-01
     {
-        height: 460px;
+        height: 100%;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
         background-image: url(../../images/section-01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     section.section-02
     {
-        height: 460px;
+        height: 100%;
+        border-top: 1px solid white;
         background-image: url(../../images/section-02.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    section.section-03
+    {
+        height: 100%;
+        border-top: 1px solid white;
+        background-image: url(../../images/section-01.png);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     footer
@@ -88,6 +108,7 @@ body
         {
             color: white;
             text-decoration: none;
+            font-size: 14px;
         }
 
         > .container

@@ -11,7 +11,7 @@ module.exports = {
     },
     output: {
         path: path.resolve("./assets"),
-        publicPath: "/assets",
+        publicPath: "/assets/",
         filename: "[name].js",
     },
     devServer: {
@@ -30,7 +30,7 @@ module.exports = {
              },
              {
                  test: /\.jpg|png$/i,
-                 loader: "file"
+                 loader: "file?name=./[name].[ext]"
              },
         ]
     },
