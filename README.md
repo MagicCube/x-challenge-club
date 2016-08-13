@@ -1,5 +1,12 @@
 # X-Challenge Club [![](https://api.travis-ci.org/MagicCube/x-challenge-club.svg)](https://travis-ci.org/MagicCube/x-challenge-club)
 
+## Pages
+> Please visit on your mobile phone
+
+* [Home page (Parallax version)](https://magiccube.github.io/x-challenge-club/index2.html)
+* [Home page](https://magiccube.github.io/x-challenge-club/)
+* [Sigin in page](https://magiccube.github.io/x-challenge-club/#/sign-in)
+
 
 ## Installation
 ```sh

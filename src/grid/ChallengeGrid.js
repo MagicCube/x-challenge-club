@@ -9,7 +9,7 @@ export default class ChallengeGrid extends React.Component
         return (
             <GridList
                 cols={1}
-                cellHeight={230}
+                cellHeight={201}
                 padding={1}
             >
                 {this.props.challenges.map((challenge, i) =>
